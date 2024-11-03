@@ -1,0 +1,383 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;  
+}
+
+li a {
+    position: relative;
+    color: white;
+    font-weight: 300;
+}
+
+li a::before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+li a:hover::before {
+    width: 100%;
+}
+
+.visit-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+.visit-btn:hover {
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    transform: scale(1.03);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    display: none; /* Only show in mobile view */
+}
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.info-box h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.info-box span {
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;  
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem; 
+}
+
+.socials i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+/* Education Section */
+.education {
+    margin-top: 2rem; /* Space above education section */
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience {
+    padding: 8rem 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0; /* Adds space above and below the section */
+}
+
+.experience-photo {
+    width: 600px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 2%;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem; /* Spacing below the photo */
+    transition: transform 0.3s ease;
+}
+
+.experience-photo:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.experience-content {
+    max-width: 800px;
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.experience-item h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.6;
+}
+
+.experience-item ul {
+    margin-top: 1rem;
+    text-align: left; /* Align list items to the left */
+}
+
+/* Projects Section */
+.project {
+    margin: 2rem 0; /* Adjusted space above and below the section */
+    display: flex;
+    flex-direction: column; /* Stack title above the project items */
+}
+
+.section-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 2rem; /* Space between title and project items */
+    font-size: 1.8rem; /* Adjust font size for better visibility */
+    color: #333; /* Optional: Adjust title color */
+}
+
+/* Projects Section */
+.project {
+    margin: 2rem 0; /* Space above and below the section */
+}
+
+.section-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 2rem; /* Space between title and project items */
+    font-size: 1.8rem; /* Adjust font size for better visibility */
+    color: #333; /* Optional: Adjust title color */
+}
+
+.project-item {
+    margin-bottom: 2rem; /* Space between project items */
+}
+
+.project-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.project-photo {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text box */
+}
+
+.project-text-box {
+    border: 2px solid #2c20dd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    flex-grow: 1; /* Allow the text box to grow and fill space */
+}
+
+h3 {
+    margin: 0; /* Remove margin for consistent spacing */
+    text-align: left; /* Align project title to the left */
+}
+
+p {
+    margin: 0; /* Remove margin for consistent spacing */
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Achievements Section */
+.achievements {
+    margin: 5rem 0; /* Adds space above and below the section */
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem; /* Space between achievement items */
+}
+
+.achievement-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 2rem; /* Space between image and text */
+}
+
+.achievement-text {
+    text-align: left;
+}
+
+/* Extra-Curricular Activities */
+.extra-curricular-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.extra-box {
+    margin: 1rem 0; /* Space between extra-curricular items */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements */
+        gap: 1rem;
+    }
+
+    .about .about-container {
+        flex-direction: column; /* Stack about section elements */
+        align-items: center;
+    }
+
+    .about img {
+        width: 70vw; /* Adjust image size on smaller screens */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+}
+.info-box {
+    border: 2px solid #2c20dd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the box */
+    margin: 20px; /* Spacing outside the box */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.info-box h3 {
+    margin-top: 0; /* Remove top margin */
+    color: #333; /* Title color */
+}
+
+.info-box ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent for list items */
+}
+
+.info-box li {
+    margin-bottom: 10px; /* Space between list items */
+}
