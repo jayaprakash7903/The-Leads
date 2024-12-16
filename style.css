@@ -648,77 +648,54 @@ body {
 }
 
 /* 1280px and below */
-@media (max-width: 1280px) {
-    /* Add any styles specific to 1280px breakpoint if needed */
-}
-
-/* 768px and below */
-/* Responsive Styling */
-@media (max-width: 768px) {
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack header items on small screens */
-        gap: 1rem;
-    }
-
-    .about .about-container {
-        flex-direction: column; /* Stack about section items on small screens */
-        gap: 2rem;
+        flex-direction: row;  /* Stack header elements vertically */
+        gap: 1rem;  /* Space between elements */
+        padding: 1rem;  /* Add padding for better spacing */
     }
 
     .about img {
-        width: 80vw; /* Full width on small screens */
+        width: 80%;  /* Make the image width smaller for mobile */
     }
 
-    .project-card {
-        padding: 1rem; /* Reduce padding on project cards */
+    .nav-links {
+        display: none;  /* Hide navigation links for mobile */
     }
 
-    .experience-photo {
-        width: 100%; /* Responsive photo width */
-        height: auto; /* Maintain aspect ratio */
+    #menu-icon {
+        display: block;  /* Show menu icon for mobile navigation */
     }
 
-    .extra-curricular-container {
-        flex-direction: column; /* Stack extracurricular items */
+    .info-box h1 {
+        font-size: 2.5rem;  /* Smaller font size for headings */
     }
 
-    .btn-group {
-        flex-direction: column; /* Stack buttons on small screens */
-    }
-}
-
-/* 600px and below */
-@media (max-width: 600px) {
-    .project-grid {
-        flex-direction: column; /* Stack project cards vertically */
-    }
-
-    .project-card {
-        margin-bottom: 1rem; /* Spacing between project cards */
-    }
-
-    .project-photo {
-        width: 100%; /* Make project images responsive */
-        height: auto; /* Maintain aspect ratio */
+    .info-box span {
+        font-size: 1.5rem;  /* Adjust font size of span for better readability */
     }
 
     .btn-group {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
+        flex-direction: column;  /* Stack buttons vertically */
+        gap: 0.5rem;  /* Space between buttons */
     }
 
-    .btn {
-        width: 100%; /* Full-width buttons */
-        margin: 0.5rem 0; /* Spacing between buttons */
+    .project-item {
+        flex-direction: column;  /* Stack image and details vertically */
     }
 
-    .certificate-item {
-        width: 100%; /* Full-width certificate items */
-        margin-bottom: 1rem; /* Spacing between certificates */
+    .achievement-item {
+        flex-direction: column;  /* Stack image and text vertically */
     }
-
-    .extra-curricular-container {
-        flex-direction: column; /* Stack extra-curricular items */
-        align-items: center; /* Center items */
+    .about-container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
 }
