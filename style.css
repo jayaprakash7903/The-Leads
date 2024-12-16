@@ -516,6 +516,7 @@ section {
 .contact-container {
     display: flex;
     flex-direction: column;
+    color: black;
     align-items: center;
     gap: 30px; /* Increased space between elements in the container */
 }
@@ -528,6 +529,7 @@ section {
     margin-bottom: 15px; /* Increased space below the heading */
     line-height: 1.6; /* More space between lines */
     font-family: 'Arial', sans-serif; /* Interactive font */
+    color: #000000;
 }
 
 .contact-info ul {
