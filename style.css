@@ -794,28 +794,27 @@ section {
 @media (max-width: 768px) {
     .skills-container {
         gap: 0.5rem;
-        flex-wrap: wrap; /* Allow wrapping of skill items */
     }
 
     .skill-item {
-        padding: 0.6rem; /* Reduced padding */
-        width: 45%; /* Reduced width to fit two items per row */
+        padding: 0.8rem;
+        width: 180px;
     }
 
     .skill-icon {
-        font-size: 1rem; /* Smaller icon size */
+        font-size: 1.2rem;
     }
 
     .skill-name {
-        font-size: 0.8rem; /* Reduced font size */
+        font-size: 0.9rem;
     }
 
     .skill-level {
-        font-size: 0.7rem; /* Reduced font size */
+        font-size: 0.8rem;
     }
 
     .progress-bar {
-        height: 4px; /* Smaller progress bar */
+        height: 5px;
     }
 }
 
@@ -900,23 +899,19 @@ section {
 
 .skill-header {
     display: flex;
-    justify-content: space-between; /* Space between the images and content */
-    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.skill-icon {
+.skill-icon img {
     width: 50px;
     height: 50px;
 }
 
-.skill-icon.left {
-    order: -1; /* Moves the left image to the left */
-}
-
-.skill-content {
-    text-align: center;
-    width: 100%; /* Ensure content takes available space */
+.skill-details {
+    margin-top: 0.5rem;
+    text-align: left;
 }
 
 .skill-name {
@@ -934,7 +929,7 @@ section {
 }
 
 .progress-bars {
-    display: flex;
+    display: flex; /* Align the progress bars horizontally */
     justify-content: space-between;
 }
 
@@ -944,7 +939,7 @@ section {
     border-radius: 5px;
     overflow: hidden;
     margin: 0.5rem 0;
-    width: 48%;
+    width: 48%; /* Take up half the space */
 }
 
 .progress-fill {
@@ -962,18 +957,65 @@ section {
     background-color: #ffa500;
 }
 @media (max-width: 768px) {
+    /* Adjust the skills section container */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        gap: 0.5rem; /* Adjust gap between items */
+        justify-content: space-between;
+    }
+
+    /* Skill item adjustments for 3 items in a row */
+    .skill-item {
+        padding: 0.3rem; /* Reduced padding for compactness */
+        width: 23%; /* Set width to 23% for 4 items in a row */
+        font-size: 0.7rem; /* Smaller font size */
+        border-radius: 5px; /* Optional: Rounded corners for a cleaner look */
+        box-shadow: none; /* Remove shadow for a flatter look */
+        margin: 0.3rem 0; /* Add small margin between items */
+    }
+    
+
+    /* Skill icon size adjustments */
+    .skill-icon img {
+        width: 20px; /* Further reduced icon size */
+        height: 20px;
+        margin-bottom: 0.3rem; /* Add small spacing below icon */
+    }
+
+    /* Skill name font size adjustments */
     .skill-name {
-        font-size: 1.1rem; /* Slightly reduce font size */
+        font-size: 0.8rem; /* Reduced font size for skill name */
+        margin-bottom: 0.2rem; /* Small space between name and progress bar */
     }
 
+    /* Skill level font size adjustments */
     .skill-level {
-        font-size: 0.85rem; /* Reduce skill level text size */
-    }
-    .internship-details ul li {
-        font-size: 0.85rem; /* Reduced font size for internship details */
+        font-size: 0.6rem; /* Smaller font size for skill level */
+        margin-bottom: 0.3rem; /* Small space between level and progress bar */
     }
 
-    .learning-details {
-        font-size: 0.85rem; /* Reduce font size for learning details */
+    /* Progress bar size adjustments */
+    .progress-bar {
+        height: 3px; /* Reduced height for progress bar */
+        border-radius: 3px; /* Optional: Rounded progress bar edges */
+        margin-top: 0.3rem; /* Space above the progress bar */
+    }
+
+    /* Adjust the progress fill size for each level */
+    .progress-fill {
+        height: 100%;
+    }
+
+    .progress-fill.expert {
+        width: 90%; /* Expert level progress */
+    }
+
+    .progress-fill.advanced {
+        width: 75%; /* Advanced level progress */
+    }
+
+    .progress-fill.intermediate {
+        width: 50%; /* Intermediate level progress */
     }
 }
