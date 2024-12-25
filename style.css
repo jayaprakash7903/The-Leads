@@ -794,27 +794,28 @@ section {
 @media (max-width: 768px) {
     .skills-container {
         gap: 0.5rem;
+        flex-wrap: wrap; /* Allow wrapping of skill items */
     }
 
     .skill-item {
-        padding: 0.8rem;
-        width: 180px;
+        padding: 0.6rem; /* Reduced padding */
+        width: 45%; /* Reduced width to fit two items per row */
     }
 
     .skill-icon {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Smaller icon size */
     }
 
     .skill-name {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Reduced font size */
     }
 
     .skill-level {
-        font-size: 0.8rem;
+        font-size: 0.7rem; /* Reduced font size */
     }
 
     .progress-bar {
-        height: 5px;
+        height: 4px; /* Smaller progress bar */
     }
 }
 
