@@ -965,40 +965,51 @@ section {
         justify-content: space-between;
     }
 
-    /* Skill item adjustments for 3 items in a row */
+    /* Skill item adjustments for 3 or 4 items in a row */
     .skill-item {
         padding: 0.3rem; /* Reduced padding for compactness */
-        width: 23%; /* Set width to 23% for 4 items in a row */
+        width: 30%; /* Set width to 30% for 3 items in a row (or 23% for 4 items) */
         font-size: 0.7rem; /* Smaller font size */
         border-radius: 5px; /* Optional: Rounded corners for a cleaner look */
         box-shadow: none; /* Remove shadow for a flatter look */
         margin: 0.3rem 0; /* Add small margin between items */
+        display: flex; /* Use flexbox for centering */
+        flex-direction: column; /* Align content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
     }
-    
 
-    /* Skill icon size adjustments */
+    /* Center skill icon */
+    .skill-icon {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin-bottom: 0.3rem; /* Space below the icon */
+    }
+
     .skill-icon img {
-        width: 20px; /* Further reduced icon size */
-        height: 20px;
-        margin-bottom: 0.3rem; /* Add small spacing below icon */
+        width: 30px; /* Adjust the size of the icons */
+        height: 30px;
     }
 
-    /* Skill name font size adjustments */
+    /* Center skill name and skill level */
     .skill-name {
         font-size: 0.8rem; /* Reduced font size for skill name */
-        margin-bottom: 0.2rem; /* Small space between name and progress bar */
+        text-align: center; /* Center the text */
+        margin-bottom: 0.2rem; /* Space between name and progress bar */
     }
 
-    /* Skill level font size adjustments */
     .skill-level {
         font-size: 0.6rem; /* Smaller font size for skill level */
+        text-align: center; /* Center the text */
         margin-bottom: 0.3rem; /* Small space between level and progress bar */
     }
 
-    /* Progress bar size adjustments */
+    /* Adjust the progress bar for a smaller size */
     .progress-bar {
         height: 3px; /* Reduced height for progress bar */
-        border-radius: 3px; /* Optional: Rounded progress bar edges */
+        width: 100%; /* Full width of the container */
+        border-radius: 3px; /* Rounded progress bar edges */
         margin-top: 0.3rem; /* Space above the progress bar */
     }
 
