@@ -963,6 +963,7 @@ section {
         flex-wrap: wrap; /* Allow items to wrap */
         gap: 0.5rem; /* Adjust gap between items */
         justify-content: space-between;
+        
     }
 
     /* Skill item adjustments for 3 or 4 items in a row */
@@ -1028,6 +1029,11 @@ section {
 
     .progress-fill.intermediate {
         width: 50%; /* Intermediate level progress */
+    }
+    .internship-details ul li {
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 1.6;
     }
 }
 @media (max-width: 768px) {
@@ -1155,5 +1161,8 @@ section {
     .show-more-btn {
         width: 100%; /* Make the "Show More" button full-width */
         padding: 15px; /* Increase padding for easier tapping on mobile */
+    }
+    .learning-details{
+        font-size: 0.8rem; 
     }
 }
