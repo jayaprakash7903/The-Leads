@@ -1166,3 +1166,34 @@ section {
         font-size: 0.8rem; 
     }
 }
+.skill-header {
+    text-align: center; /* Centers the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 10px; /* Adds spacing between title and icons */
+}
+.icons-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 15px; /* Space between icons */
+    padding: 20px; /* Add some padding */
+}
+
+.skill-icon img {
+    width: 50px; /* Adjust icon size */
+    height: auto;
+}
+
+
+.skill-icon {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    align-items: center; /* Centers icons vertically */
+}
+
+
