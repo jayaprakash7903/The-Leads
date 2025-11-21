@@ -3,600 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JAYAPRAKASH V</title>
+    <title>The Leads - Data Analytics & Business Intelligence Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><span>JAYAPRAKASH V</span></a>
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#project">Projects</a>
-            </li>
-            <li>
-                <a href="#achievements">Achievements</a>
-            </li>
-            <li>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="logo-text">The <span>Leads</span></div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#specializations">Specializations</a>
+                <a href="#services">Services</a>
+                <a href="#tech-stack">Tech Stack</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <a href="https://github.com/jayaprakash7903" target="_blank" class="visit-btn">Visit GitHub</a>
+            </nav>
+            
+            <a href="#contact" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="jp.jpg" alt="Profile Picture">
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>JAYAPRAKASH V</h1>
-                    <span>DATA ANALYST</span>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i> Data-Driven Solutions
                 </div>
-                <div class="btn-group">
-                    <div class="btn">
-                        <a href="https://drive.google.com/file/d/1QedTVVACnxQLznmA3PjdYcOD5U9Xo2RZ/view?usp=sharing" target="_blank" download>Download CV</a>
+                <h1 class="hero-title">Transforming Data Into <span>Competitive Advantage</span></h1>
+                <p class="hero-description">
+                    We help businesses unlock the power of their data through advanced analytics, 
+                    machine learning, and strategic insights that drive growth and efficiency.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-chart-bar"></i> Our Services
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-comment"></i> Get Consultation
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">2+</div>
+                        <div class="stat-label">Projects Completed</div>
                     </div>
-                    <div class="btn">
-                        <a href="mailto:jayaprakashvelmurugan111@gmail.com">Contact</a>
+                    <div class="stat">
+                        <div class="stat-value">94%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">1+</div>
+                        <div class="stat-label">Years Experience</div>
                     </div>
                 </div>
-                <div class="socials">
-                    <a href="https://github.com/jayaprakash7903" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jayaprakash-v-33913a289/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Business Performance Metrics</div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #3498DB;"></div>
+                                <span>Revenue</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #E74C3C;"></div>
+                                <span>Costs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-area">
+                        <div class="chart-bar" style="height: 70%;">
+                            <div class="chart-label">Q1</div>
+                        </div>
+                        <div class="chart-bar" style="height: 85%;">
+                            <div class="chart-label">Q2</div>
+                        </div>
+                        <div class="chart-bar" style="height: 65%;">
+                            <div class="chart-label">Q3</div>
+                        </div>
+                        <div class="chart-bar" style="height: 95%;">
+                            <div class="chart-label">Q4</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="education">
-                    <h2>About Me</h2>
-                    <p>
-                        I am currently working as a <strong>Manufacturing & Projects Analyst at FLSmidth</strong>, where I leverage my expertise in data analytics, automation, and business intelligence to drive operational excellence and strategic decision-making.<br><br>
-                        I have completed my <strong>MBA in AI & Data Science</strong> from SRM University with <strong>92%</strong>, building a strong foundation in Python, R, SQL, machine learning, and advanced analytics.<br><br>
-                        My journey includes hands-on experience in process automation, dashboard development, and delivering actionable insights across manufacturing and business functions.<br><br>
-                        I have also excelled in national and international competitions, securing <strong>2nd place at the IITM Data Analytics Hackathon</strong> and being <strong>runner-up at TechnoVIT's Datathon</strong>.<br><br>
-                        With proficiency in Power BI, Tableau, and advanced Excel, I am passionate about transforming data into strategic success.<br><br>
-                        Let’s connect to turn data into impact!
+            </div>
+        </div>
+    </section>
+
+    <!-- Specializations Section -->
+    <section class="specializations" id="specializations">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Expertise</div>
+                <h2 class="section-title">Data Specializations</h2>
+                <p class="section-description">
+                    We specialize in transforming complex data into actionable insights across various domains
+                </p>
+            </div>
+            
+            <div class="specializations-grid">
+                <div class="specialization-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="card-title">Data Analytics & Visualization</h3>
+                    <p class="card-description">
+                        Transform raw data into meaningful insights with interactive dashboards and comprehensive reports.
                     </p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Interactive Dashboards</li>
+                        <li><i class="fas fa-check"></i> KPI Tracking</li>
+                        <li><i class="fas fa-check"></i> Real-time Reporting</li>
+                        <li><i class="fas fa-check"></i> Custom Metrics Development</li>
+                    </ul>
                 </div>
-                <!-- Tag Cloud Section -->
-                <div class="tag-cloud">
-                    <h2>Areas of Interest</h2>
-                    <span class="tag medium">Data Analytics and Visualization</span>
-                    <span class="tag big">Machine Learning</span>
-                    <span class="tag medium">Deep Learning</span>
-                    <span class="tag medium">Hackathons and Competitions</span>
-                    <span class="tag medium">Automation</span>
-                    <span class="tag small">Demand Forecasting</span>
-                    <span class="tag small">Natural Language Processing</span>
-                    <span class="tag small">Predictive Analytics</span>
-                    <span class="tag small">Statistical Analysis</span>
-                    <span class="tag small">Business Intelligence</span>
+                
+                <div class="specialization-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="card-title">Machine Learning Solutions</h3>
+                    <p class="card-description">
+                        Implement predictive models and AI-driven solutions to forecast trends and automate decisions.
+                    </p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Predictive Modeling</li>
+                        <li><i class="fas fa-check"></i> Demand Forecasting</li>
+                        <li><i class="fas fa-check"></i> Fraud Detection Systems</li>
+                        <li><i class="fas fa-check"></i> Custom ML Algorithms</li>
+                    </ul>
+                </div>
+                
+                <div class="specialization-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="card-title">Business Intelligence</h3>
+                    <p class="card-description">
+                        Develop comprehensive BI strategies that align with your business goals and drive growth.
+                    </p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Data Governance</li>
+                        <li><i class="fas fa-check"></i> Analytics Roadmapping</li>
+                        <li><i class="fas fa-check"></i> Performance Metrics Design</li>
+                        <li><i class="fas fa-check"></i> Implementation Support</li>
+                    </ul>
+                </div>
+                
+                <div class="specialization-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="card-title">Process Automation</h3>
+                    <p class="card-description">
+                        Streamline operations with custom automation solutions that reduce manual work and errors.
+                    </p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Workflow Automation</li>
+                        <li><i class="fas fa-check"></i> Data Processing Pipelines</li>
+                        <li><i class="fas fa-check"></i> Report Generation Systems</li>
+                        <li><i class="fas fa-check"></i> Custom Script Development</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills-section">
-        <h2 class="skills-title">My Skills and Tools</h2>
-        <div class="skills-container">
-            <!-- Python -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="python.png" alt="Python Logo"></div>
-                <div class="skill-name">Python</div>
-                <div class="skill-level">Expert</div>
-                <div class="progress-bar">
-                    <div class="progress-fill expert"></div>
-                </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">What We Offer</div>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Comprehensive data solutions tailored to your business needs
+                </p>
             </div>
-    
-            <!-- SQL -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="sql-48.png" alt="SQL Logo"></div>
-                <div class="skill-name">SQL</div>
-                <div class="skill-level">Expert</div>
-                <div class="progress-bar">
-                    <div class="progress-fill expert"></div>
-                </div>
-            </div>
-    
-            <!-- Excel -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-excel-48.png" alt="Excel Logo"></div>
-                <div class="skill-name">Excel</div>
-                <div class="skill-level">Advanced</div>
-                <div class="progress-bar">
-                    <div class="progress-fill advanced"></div>
-                </div>
-            </div>
-    
-            <!-- VBA -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-script-50.png" alt="VBA Logo"></div>
-                <div class="skill-name">VBA</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-    
-            <!-- Power BI -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="power.png" alt="Power BI Logo"></div>
-                <div class="skill-name">Power BI</div>
-                <div class="skill-level">Advanced</div>
-                <div class="progress-bar">
-                    <div class="progress-fill advanced"></div>
-                </div>
-            </div>
-    
-            <!-- Tableau -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-tableau-software-48.png" alt="Tableau Logo"></div>
-                <div class="skill-name">Tableau</div>
-                <div class="skill-level">Advanced</div>
-                <div class="progress-bar">
-                    <div class="progress-fill advanced"></div>
-                </div>
-            </div>
-    
-            <!-- Power Automate -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-microsoft-power-automate-2020-48.png" alt="Power Automate Logo"></div>
-                <div class="skill-name">Power Automate</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-rstudio-48.png" alt="R Logo"></div>
-                <div class="skill-name">R</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-    
-            <!-- Google Sheets -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-google-sheets-48.png" alt="Google Sheets Logo"></div>
-                <div class="skill-name">Google Sheets</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-    
-            <!-- MS Office -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-ms-office-48.png" alt="MS Office Logo"></div>
-                <div class="skill-name">MS Office</div>
-                <div class="skill-level">Advanced</div>
-                <div class="progress-bar">
-                    <div class="progress-fill advanced"></div>
-                </div>
-            </div>
-    
-            <!-- Machine Learning -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-ml-42.png" alt="Machine Learning Logo"></div>
-                <div class="skill-name">Machine Learning</div>
-                <div class="skill-level">Expert</div>
-                <div class="progress-bar">
-                    <div class="progress-fill expert"></div>
-                </div>
-            </div>
-    
-            <!-- Natural Language Processing -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-nlp-50.png" alt="NLP Logo"></div>
-                <div class="skill-name">NLP</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-    
-            <!-- Deep Learning -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-deep-learning-50.png" alt="Deep Learning Logo"></div>
-                <div class="skill-name">Deep Learning</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="progress-bar">
-                    <div class="progress-fill intermediate"></div>
-                </div>
-            </div>
-    
-            <!-- Statistics -->
-            <div class="skill-item">
-                <div class="skill-icon"><img src="icons8-statistics-48.png" alt="Statistics Logo"></div>
-                <div class="skill-name">Statistics</div>
-                <div class="skill-level">Advanced</div>
-                <div class="progress-bar">
-                    <div class="progress-fill advanced"></div>
-                </div>
-            </div>
-    
-            <!-- R -->
             
-    
-            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="service-title">Analytics Package</h3>
+                        <p class="service-description">Basic data analysis and reporting</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Data Analysis & Reporting</li>
+                            <li><i class="fas fa-check"></i> Basic Dashboard Creation</li>
+                            <li><i class="fas fa-check"></i> Monthly Performance Reviews</li>
+                            <li><i class="fas fa-check"></i> Data Cleaning & Preparation</li>
+                        </ul>
+                        <div class="service-price">₹4,499<span>/month</span></div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">Grow your online presence and generate qualified leads</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> SEO & Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Paid Ads (Google & Social)</li>
+                            <li><i class="fas fa-check"></i> Social Media Management</li>
+                            <li><i class="fas fa-check"></i> Conversion Rate Optimization</li>
+                        </ul>
+                        <div class="service-price">10 % <span>/Per Client</span></div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="service-title">Business Intelligence</h3>
+                        <p class="service-description">Advanced analytics and insights</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Everything in Analytics Package</li>
+                            <li><i class="fas fa-check"></i> Advanced Predictive Models</li>
+                            <li><i class="fas fa-check"></i> Custom BI Dashboard</li>
+                            <li><i class="fas fa-check"></i> Weekly Strategy Sessions</li>
+                            <li><i class="fas fa-check"></i> Data Governance Framework</li>
+                        </ul>
+                        <div class="service-price">₹6,999<span>/month</span></div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="service-title">Enterprise Solution</h3>
+                        <p class="service-description">End-to-end data transformation</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Everything in Business Intelligence</li>
+                            <li><i class="fas fa-check"></i> Machine Learning Implementation</li>
+                            <li><i class="fas fa-check"></i> Complete Process Automation</li>
+                            <li><i class="fas fa-check"></i> 24/7 Support & Monitoring</li>
+                            <li><i class="fas fa-check"></i> Custom API Development</li>
+                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        </ul>
+                        <div class="service-price">₹8,499<span>/month</span></div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title">Custom Project</h3>
+                        <p class="service-description">One-time tailored project — no monthly maintenance</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Scoping & Requirements Gathering</li>
+                            <li><i class="fas fa-check"></i> End-to-end Solution Delivery</li>
+                            <li><i class="fas fa-check"></i> Handover, Documentation & Training</li>
+                            <li><i class="fas fa-check"></i> Option for Ongoing Support (optional add-on)</li>
+                        </ul>
+                        <div class="service-price">₹9,999 On Wards<span> one-time</span></div>
+                        <a href="#contact" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    
-    
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-content">
-            <!-- 1st Experience: Manufacturing & Projects Analyst, FLSmidth -->
-            <img src="fls.jpeg" alt="FLSmidth Experience" class="experience-image">
-            <table class="experience-table">
-                <thead>
-                    <tr>
-                        <th>Manufacturing & Projects Analyst<br>FLSmidth (June 2025 – Present)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="internship-details">
-                                <strong>Key Contributions:</strong>
-                                <ul>
-                                    <li>Designed and implemented Power BI dashboards, SQL-connected reports, and automation tools to improve real-time visibility and decision-making across manufacturing, procurement, and quality functions.</li>
-                                    <li>Developed and streamlined end-to-end financial reporting solutions (Project Cost Report, Capex Dashboard, Purchase Order Tracking, etc.), enhancing transparency and operational efficiency.</li>
-                                    <li>Automated manual processes such as meeting minutes, inspection notifications, maintenance tracking, and costing, reducing errors and saving significant time.</li>
-                                    <li>Collaborated with cross-functional teams to identify pain points, design solutions, and deliver actionable insights, improving accountability, compliance, and productivity.</li>
-                                    <li>Created a centralized report register and workspace for manufacturing data, ensuring consistency, faster access, and data-driven decision-making across departments.</li>
-                                </ul>
-                                <strong>Tech Stack:</strong> Power BI | Python | SQL | D365 | Excel | Power Automate | Excel VBA | Power Apps | Power Query | DAX 
+    <!-- Tech Stack Section -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Technology</div>
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-description">
+                    We leverage cutting-edge technologies to deliver robust and scalable data solutions
+                </p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3 class="category-title">Data Analytics & Visualization</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-python"></i>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="skill-box-container">
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <div class="skill-icon left"><img src="power.png" alt="Power BI Logo"></div>
-                        <div class="skill-content">
-                            <div class="skill-name">Power BI, SQL & Automation</div>
-                            <div class="skill-level">
-                                <span>Power BI: Advanced</span>
-                                <span>SQL: Advanced</span>
-                                <span>Automation: Advanced</span>
-                            </div>
-                            <div class="progress-bars">
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
+                            <div class="tech-info">
+                                <h4>Python</h4>
+                                <p>Advanced data analysis with Pandas, NumPy, and SciPy</p>
                             </div>
                         </div>
-                        <div class="skill-icon right"><img src="icons8-ms-office-48.png" alt="Automation Logo"></div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>SQL</h4>
+                                <p>Advanced querying and database management</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Power BI</h4>
+                                <p>Interactive dashboards and business intelligence</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Tableau</h4>
+                                <p>Advanced data visualization and reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3 class="category-title">Machine Learning & AI</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Scikit-Learn</h4>
+                                <p>Machine learning algorithms and model development</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>TensorFlow</h4>
+                                <p>Deep learning and neural networks</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>PyTorch</h4>
+                                <p>Advanced machine learning research</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>NLTK & SpaCy</h4>
+                                <p>Natural language processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3 class="category-title">Automation & Tools</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Power Automate</h4>
+                                <p>Workflow automation and process optimization</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Excel VBA</h4>
+                                <p>Advanced spreadsheet automation</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-r-project"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>R Programming</h4>
+                                <p>Statistical analysis and data visualization</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Google Sheets</h4>
+                                <p>Collaborative data analysis and automation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- 2nd Experience: Data Analyst, FLSmidth -->
-            <img src="fls.jpeg" alt="FLSmidth Data Analyst" class="experience-image">
-            <table class="experience-table">
-                <thead>
-                    <tr>
-                        <th>Data Analyst<br>FLSmidth (Feb 2025 – Jun 2025)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="internship-details">
-                                As a Data Analyst at FLSmidth, I led and delivered over 12+ automation and dashboard projects that enhanced data visibility, improved operational efficiency, and supported business decision-making.
-                                <br><br>
-                                <strong>Key Contributions:</strong>
-                                <ul>
-                                    <li>Built and deployed Power BI dashboards for KPIs, Capex, Quality Orders, and Maintenance tracking.</li>
-
-                                    
-                                    <li>Created monitoring apps (e.g., Air Compressor, Forklift, Hydra) to improve equipment tracking and real-time visibility.</li>
-                                    <li>Supported multiple departments (Production, Quality, Logistics) by delivering actionable data insights.</li>
-                                </ul>
-                                <strong>Tech Stack:</strong> Power BI | Python | SQL | D365 | Excel | Power Automate | Excel VBA | Power Apps
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Work</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    See how we've helped businesses transform their data into actionable insights
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Finance</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Banking Fraud Detection System</h3>
+                        <p class="project-description">
+                            Developed a machine learning model with 94% accuracy in detecting fraudulent transactions, reducing financial losses by 35%.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-number">94%</div>
+                                <div class="stat-label">Accuracy</div>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="skill-box-container">
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <div class="skill-icon left"><img src="power.png" alt="Power BI Logo"></div>
-                        <div class="skill-content">
-                            <div class="skill-name">Power BI, Python, SQL & Automation</div>
-                            <div class="skill-level">
-                                <span>Power BI: Advanced</span>
-                                <span>Python: Expert</span>
-                                <span>SQL: Advanced</span>
-                                <span>Automation: Advanced</span>
-                            </div>
-                            <div class="progress-bars">
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
-                                <div class="progress-bar"><div class="progress-fill expert"></div></div>
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
+                            <div class="project-stat">
+                                <div class="stat-number">35%</div>
+                                <div class="stat-label">Loss Reduction</div>
                             </div>
                         </div>
-                        <div class="skill-icon right"><img src="icons8-ml-42.png" alt="Automation Logo"></div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Retail</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Inventory Optimization System</h3>
+                        <p class="project-description">
+                            Implemented demand forecasting with ABC analysis, reducing stockouts by 60% and cutting inventory costs by 22%.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-number">60%</div>
+                                <div class="stat-label">Stockout Reduction</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-number">22%</div>
+                                <div class="stat-label">Cost Savings</div>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Healthcare</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Email Security Solution</h3>
+                        <p class="project-description">
+                            Created an AI classifier with 95% accuracy to detect phishing attempts, protecting sensitive patient data.
+                        </p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Detection Accuracy</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Data Protection</div>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- 3rd Experience: XCMG -->
-            <img src="xcmg.jpg" alt="XCMG Experience" class="experience-image">
-            <table class="experience-table">
-                <thead>
-                    <tr>
-                        <th>XCMG (June - July 2024)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="internship-details">
-                                <ul>
-                                    <li>Optimized daily processes, saving 10 minutes per employee by automating email workflows.</li>
-                                    <li>Revolutionized decision-making with a real-time dashboard, cutting task completion times by 15 minutes through automation.</li>
-                                    <li>Boosted processing efficiency by 50 minutes daily with an automated invoice generator.</li>
-                                    <li>Streamlined data management, reducing manual workloads and enhancing resource allocation.</li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="skill-box-container">
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <div class="skill-icon left"><img src="icons8-excel-48.png" alt="VBA Logo"></div>
-                        <div class="skill-content">
-                            <div class="skill-name">Excel & VBA</div>
-                            <div class="skill-level">
-                                <span>Excel: Advanced</span>
-                                <span>VBA: Intermediate</span>
-                            </div>
-                            <div class="progress-bars">
-                                <div class="progress-bar"><div class="progress-fill advanced"></div></div>
-                                <div class="progress-bar"><div class="progress-fill intermediate"></div></div>
-                            </div>
-                        </div>
-                        <div class="skill-icon right"><img src="icons8-script-50.png" alt="Excel Logo"></div>
-                    </div>
-                </div>
-            </div>
-            <p class="learning-details">
-                Before my internship at XCMG India, I had no knowledge of VBA or how it worked in Excel. During the internship, 
-                I realized that Excel was the backbone of operations, with <strong>90% of employees relying on it for daily tasks.</strong> Determined to contribute meaningfully,
-                I taught myself Advanced Excel, VBA, and Excel Macros. As a result, I created a macro-based invoice generator that significantly reduced 
-                work stress for employees in the stores department by automating repetitive tasks. This initiative streamlined processes,
-                improved efficiency, and had a lasting positive impact on the organization.
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Transform Your Data Strategy?</h2>
+            <p class="cta-description">
+                Schedule a free consultation with our data experts and discover how we can help 
+                you leverage data for business growth and competitive advantage.
             </p>
-        </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-content">
-            <div class="education-card">
-                <h3>MBA in AI & Data Science</h3>
-                <p><strong> SRM University,KTR(2023 - 2025)</strong></p>
-                
-                <ul>
-                    <li>Specializing in Artificial Intelligence and Data Science.</li>
-                    <li>Developing skills in advanced analytics, machine learning, and data-driven decision-making.</li>
-                </ul>
-            </div>
-            <div class="education-card">
-                <h3>Bachelor Of Computer Applications</h3>
-                <p><strong>Sri Sankara Arts and Science College(2020 - 2023)</strong> </p>
-                
-                <ul>
-                    <li>Built a foundation in data analytics, programming, and statistical analysis.</li>
-                    <li>Graduated with strong academic performance and hands-on project experience.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    <section id="project" class="project">
-        <h2 class="section-title">Projects</h2>
-        
-        <div class="project-item">
-            <div class="project-image-container">
-                <img src="fraud_detection.jpg" alt="Fraud Detection Model" class="project-photo">
-            </div>
-            <div class="project-details">
-                <h3>Fraud Detection Model in Banking</h3>
-                <p>Designed and implemented a machine learning model that achieved <strong>94% accuracy</strong> in detecting fraudulent transactions using a simulated banking dataset. This project mitigated monetary losses and preserved customer trust, earning <strong>2nd place</strong> in the VIT hackathon.</p>
-                <a href="https://github.com/jayaprakash7903" target="_blank" class="project-link">View Details</a>
-            </div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-image-container">
-                <img src="candidate_evaluation.jpeg" alt="AI Candidate Evaluation" class="project-photo">
-            </div>
-            <div class="project-details">
-                <h3>AI Candidate Evaluation Process</h3>
-                <p>Developed an advanced AI evaluation system that integrates <strong>sentiment analysis</strong>, <strong>emotional intelligence assessment</strong>, and <strong>resume filtering</strong>. This application improved sorting accuracy and reduced screening time by <strong>30%</strong>.</p>
-                <a href="https://github.com/jayaprakash7903" target="_blank" class="project-link">View Details</a>
-            </div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-image-container">
-                <img src="demandforcasting.png" alt="Demand Forecasting with ABC" class="project-photo">
-            </div>
-            <div class="project-details">
-                <h3>Demand Forecasting with ABC</h3>
-                <p>Designed a machine learning model for demand forecasting with ABC analysis to improve inventory management as part of ongoing research, 2024.</p>
-                <a href="https://github.com/jayaprakash7903" target="_blank" class="project-link">View Details</a>
-            </div>
-        </div>
-    
-        <div class="project-item">
-            <div class="project-image-container">
-                <img src="ai_email_classifier.jpg" alt="Digital Library System" class="project-photo">
-            </div>
-            <div class="project-details">
-                <h3>AI Email Classifier for Phishing Detection</h3>
-                <p>Developed an AI email classifier with 95% accuracy to detect phishing attempts, such as fraudulent insurance claims, protecting hospitals.
-                     Leveraged NLP, Bidirectional LSTM, and TensorFlow for real-time monitoring.</p>
-                <a href="https://github.com/jayaprakash7903" target="_blank" class="project-link">View Details</a>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    <section id="achievements" class="achievements">
-        <h2 class="section-title">Achievements & Awards</h2>
-        
-        <div class="achievement-item left">
-            <img src="vitrunner.jpg" alt="VIT Datathon Achievement" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Runner-up in the Datathon event as part of TechnoVIT,<br>an international-level meet, Sep 2024</h3>
-            </div>
-        </div>
-        
-        <div class="achievement-item right">
-            <img src="iiitdm.jpeg" alt="IIITDM Hackathon Achievement" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Achieved 2nd place out of 500 teams<br>in the national IIITDM Data Analytics Hackathon, 2024</h3>
-            </div>
-        </div>
-
-        <div class="achievement-item left">
-            <img src="hack.png" alt="Achievement 6" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Completed 115/115 Python challenges on HackerRank, demonstrating expertise in coding and problem-solving.</h3>
-            </div>
-        </div>
-
-        <div class="achievement-item right">
-            <img src="wood.jpeg" alt="Achievement 4" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Advanced to the first round of the Woodpecker Analytics hackathon, 2024, selected as one of 300 teams from
-                    13,000+ submissions.</h3>
-            </div>
-        </div>
-        
-        <div class="achievement-item left">
-            <img src="agam.webp" alt="Achievement 3" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Participated in strategic decision-making at the Agam International Level Management Game, 2024, innovating
-                    AI HR among 100 teams.
-                   </h3>
-            </div>
-        </div>
-        
-       
-    
-        
-        <div class="achievement-item right">
-            <img src="HPCL.jpg" alt="Achievement 4" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Developed a Machine Learning model for truck allocation optimization at Hindustan Petroleum Corporation Limited (HPCL), 
-                    enhancing operational efficiency and advancing logistics processes.</h3>
-            </div>
-        </div>
-
-        
-
-        <div class="achievement-item left">
-            <img src="madras.jpeg" alt="Achievement 5" class="achievement-photo">
-            <div class="achievement-text box-style">
-                <h3>Achieved 4th place in a badminton tournament at Madras University, 2021</h3>
-            </div>
-        </div>
-    
-        
-    </section>
-
-    <section id="gallery" class="gallery">
-        <h2 class="section-title">My Gallery</h2>
-        <div class="gallery-container">
-            <!-- Show only two images initially -->
-            <div class="gallery-item">
-                <img src="vit.jpg" alt="Image 1">
-            </div>
-            <div class="gallery-item">
-                <img src="24.jpg" alt="Image 2">
-            </div>
-    
-            <!-- Hidden items that will be shown on clicking "Show More" -->
-            <div class="gallery-item more-images">
-                <img src="hhpl.jpg" alt="Image 3">
-            </div>
-            <div class="gallery-item more-images">
-                <img src="Certificates_page-0001.jpg" alt="Image 4">
-            </div>
-            <div class="gallery-item more-images">
-                <img src="Certificates_page-0002.jpg" alt="Image 5">
-            </div>
-            <div class="gallery-item more-images">
-                <img src="Certificates_page-0003.jpg" alt="Image 6">
-            </div>
-            <div class="gallery-item more-images">
-                <img src="Certificates_page-0004.jpg" alt="Image 7">
-            </div>
-            <div class="gallery-item more-images">
-                <img src="Certificates_page-0005.jpg" alt="Image 8">
-            </div>
-        </div>
-        <button class="show-more-btn" onclick="showMore()">Show More</button>
-    </section>
-    
-    
-
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions, feel free to reach out!</p>
-        <form class="contact-form" action="https://formspree.io/f/xgvvvlze" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/jayaprakash-v-33913a289/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/jayaprakash7903" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
+            <a href="#contact" class="cta-button">
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
             </a>
         </div>
     </section>
-    
-    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Get In Touch</div>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    Ready to start your data transformation journey? Let's discuss your project.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>contact@theleads.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+91 6369055342</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>Chennai, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option value="analytics">Data Analytics</option>
+                                <option value="ml">Machine Learning</option>
+                                <option value="bi">Business Intelligence</option>
+                                <option value="automation">Process Automation</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>The Leads</h3>
+                    <p>Transforming data into strategic success through innovative analytics solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                        <li><a href="#">Process Automation</a></li>
+                        <li><a href="#">Data Strategy Consulting</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> contact@theleads.com</li>
+                        <li><i class="fas fa-phone"></i> +91 6369055342</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Chennai, India</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Leads. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
